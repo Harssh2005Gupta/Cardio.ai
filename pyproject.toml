@@ -1,0 +1,15 @@
+[project]
+name = "cardio-ai"
+version = "1.0.0"
+description = "Cardio AI — AI-Powered Cardiovascular Risk Prediction & Explainable Clinical Decision Support Prototype"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 110
+
+[tool.ruff]
+line-length = 110
