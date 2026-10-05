@@ -1,0 +1,96 @@
+{
+  "best_model_type": "svm",
+  "selection_method": "Best mean ROC-AUC across StratifiedKFold(n_splits=5) cross-validation on the training split only. Test set was never used for model selection.",
+  "cv_folds": 5,
+  "cv_results": {
+    "logistic_regression": {
+      "mean_roc_auc": 0.7902982393100969,
+      "std_roc_auc": 0.0628630329832455,
+      "fold_scores": [
+        0.8379446640316205,
+        0.7114624505928854,
+        0.7154150197628458,
+        0.8478260869565217,
+        0.8388429752066116
+      ],
+      "best_params": {
+        "classifier__C": 1
+      }
+    },
+    "decision_tree": {
+      "mean_roc_auc": 0.7408731584620912,
+      "std_roc_auc": 0.054009545798359364,
+      "fold_scores": [
+        0.8112648221343872,
+        0.7203557312252965,
+        0.6600790513833993,
+        0.7895256916996047,
+        0.7231404958677685
+      ],
+      "best_params": {
+        "classifier__max_depth": null,
+        "classifier__min_samples_leaf": 10
+      }
+    },
+    "random_forest": {
+      "mean_roc_auc": 0.7707869205892921,
+      "std_roc_auc": 0.0852551656366197,
+      "fold_scores": [
+        0.8399209486166007,
+        0.6403162055335968,
+        0.7055335968379447,
+        0.8003952569169961,
+        0.8677685950413223
+      ],
+      "best_params": {
+        "classifier__max_depth": 10,
+        "classifier__min_samples_leaf": 1,
+        "classifier__n_estimators": 200
+      }
+    },
+    "svm": {
+      "mean_roc_auc": 0.8054976643909451,
+      "std_roc_auc": 0.0617172178334665,
+      "fold_scores": [
+        0.8458498023715415,
+        0.733201581027668,
+        0.7272727272727273,
+        0.8616600790513834,
+        0.859504132231405
+      ],
+      "best_params": {
+        "classifier__C": 1,
+        "classifier__kernel": "linear"
+      }
+    },
+    "neural_network_dl": {
+      "mean_roc_auc": 0.7313330937836866,
+      "std_roc_auc": 0.075375671446391,
+      "fold_scores": [
+        0.808300395256917,
+        0.6561264822134387,
+        0.7114624505928854,
+        0.6501976284584979,
+        0.8305785123966942
+      ]
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.6964285714285714,
+    "precision": 0.7037037037037037,
+    "recall": 0.6785714285714286,
+    "f1_score": 0.6909090909090909,
+    "roc_auc": 0.7895408163265306,
+    "pr_auc": 0.7792131352968878,
+    "brier_score": 0.1895786562470741
+  },
+  "calibration_applied": true,
+  "brier_before_calibration": 0.18729247409742772,
+  "brier_after_calibration": 0.1895786562470741,
+  "dataset_hash": "419ad514f46147fe",
+  "n_training_rows": 280,
+  "n_features": 21,
+  "random_seed": 42,
+  "trained_at_utc": "2026-10-03T17:58:00.605409+00:00",
+  "model_version": "svm-419ad514f46147fe-2026-10-03"
+}

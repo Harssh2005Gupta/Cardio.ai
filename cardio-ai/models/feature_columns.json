@@ -1,0 +1,23 @@
+[
+  "age",
+  "trestbps",
+  "chol",
+  "thalach",
+  "oldpeak",
+  "sex_1",
+  "cp_1",
+  "cp_2",
+  "cp_3",
+  "fbs_1",
+  "restecg_1",
+  "restecg_2",
+  "exang_1",
+  "slope_1",
+  "slope_2",
+  "ca_1",
+  "ca_2",
+  "ca_3",
+  "ca_4",
+  "thal_2",
+  "thal_3"
+]

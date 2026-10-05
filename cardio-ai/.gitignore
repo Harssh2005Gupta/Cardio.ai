@@ -1,0 +1,33 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Environment Variables & Secrets (never commit sensitive keys)
+.env
+.streamlit/secrets.toml
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Raw patient data is never committed (the bundled synthetic demo file is
+# the one intentional exception).
+data/*.csv
+!data/sample_synthetic_heart.csv
+
+# Model artifacts ARE committed intentionally (needed for Streamlit Cloud /
+# Docker deploys with no build step) — see README "Deploying" section.
